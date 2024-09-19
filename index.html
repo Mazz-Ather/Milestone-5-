@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Resume Builder (Milestone 3 )</h1>
+    <form id="resume">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="username">Resume URL:</label>
+        <input type="text" id="username" name="username" required />
+        <br />
+
+        <label for="name">Name :</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="maaz ather"
+        />
+
+        <br />
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="abc@gmail.com"
+        />
+        <br />
+
+        <label for="phone">Phone :</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+923333333"
+          required
+        />
+        <br>
+        <label for="profilePic">Profile Picture</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+      </fieldset>
+      <!-- Education -->
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education</label>
+        <textarea name="education" id="education" rows="5" cols="40"></textarea>
+      </fieldset>
+      <!-- Skills -->
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills</label>
+        <textarea name="skills" id="skills" rows="4" cols="40"></textarea>
+      </fieldset>
+      <!-- Experience -->
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience</label>
+        <textarea
+          name="experience"
+          id="experience"
+          rows="5"
+          cols="40"
+        ></textarea>
+      </fieldset>
+
+      <button id="button" type="submit">Preview</button>
+    </form>
+    <br />
+
+    <!-- resume generate -->
+    <div id="resumeOutput"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
